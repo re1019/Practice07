@@ -1,0 +1,138 @@
+.explanation {
+    h3 {
+        margin: 0 auto;
+        font: normal normal 600 28px/42px "Yu Mincho";
+        color: #3b4043;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 70px;
+        font-size: 28px; 
+    }
+
+    p {
+        color: #3b4043;
+        font: normal normal normal 14px/40px "Yu Mincho";
+        text-align: left;
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 50px;
+        font-size: 14px;
+    }
+}
+
+.announce {
+    img {
+        display: block;
+        height: auto;
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 50px;
+    }
+
+    p {
+        font: normal normal normal 14px/40px "Yu Gothic";
+        font-weight: 400;
+        color: #707f89;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 60px;
+    }
+}
+
+.sub_header {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 800 / 1198;
+    background-image: url("../images/fruit_denish.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 50px;
+}
+
+.sub_nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    .sub_boxs {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+        img {
+        width: 120px;
+        height: auto;
+        object-fit: cover;
+        flex-shrink: 0;
+        padding-right: 10px;
+        box-sizing: border-box;
+        }
+    }
+
+    .sub_announce {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+
+    p {
+        color: #707f89;
+        font: normal normal normal 14px/20px "Yu Gothic";
+        margin-bottom: 10px;
+        }
+
+    button {
+        border-radius: 13px;
+        font-size: 12px;
+        color: #fff;
+        background-color: #000000;
+        border: none;
+        padding: 5px 12px 4px 17px;
+        align-self: flex-end;
+        margin-bottom: 30px;
+        }
+    }
+}
+
+.information {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    h3 {
+        color: #707f89;
+        font-size: 18px;
+        font-family: "源ノ角ゴシック JP", sans-serif;
+        font-weight: normal;
+        padding-top: 20px;
+        padding-bottom: 12px;
+    }
+
+    p {
+    color: #3b4043;
+    font-size: 18px;
+    font-family: "源ノ角ゴシック JP", sans-serif;
+    font-weight: normal;
+    padding-bottom: 20px;
+    }
+}
+
+.information_box_top {
+    border-top: 2px solid #98a6b5;
+}
+
+.information_box {
+    border-top: 1px solid #cdd6dd;
+    opacity: 1;
+}
+
+.information_box_bottom {
+    border-top: 1px solid #cdd6dd;
+    border-bottom: 1px solid #cdd6dd;
+    margin-bottom: 30px;
+}

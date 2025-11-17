@@ -1,0 +1,107 @@
+.footer {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+
+    .footer_menu {
+        background-color: #3b4043;
+    }
+
+    .footer_inner {
+        margin-left: 20px;
+        padding-top: 20px;
+    }
+
+    .footer_nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 0 12px;
+
+        li {
+        color: #fff;
+        font-size: 12px;
+        font-family: "源ノ角ゴシック JP", sans-serif;
+        font-weight: 400;
+        white-space: nowrap;
+
+        & + li {
+            border-left: 1px solid #fff;
+            padding-left: 10px;
+        }
+
+        &.contact {
+            order: 99;
+        }
+    }
+
+        @media screen and (max-width: 360px) {
+        justify-content: flex-start;
+
+        li {
+            flex: none;
+
+                &.contact {
+                width: 100%;
+                order: 99;
+                margin-top: 8px;
+                border-left: none;
+                padding-left: 0;
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: 9px;
+        font-family: "源ノ角ゴシック JP", sans-serif;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .main_menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: 360px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+
+        .main_menu_icon {
+        flex: 1;
+        text-align: center;
+        }
+
+        img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        }
+    }
+}
+@media screen and(min-width: 520px) {
+    body{
+        padding-bottom: 80px;
+    }
+    .footer{
+        .main_menu{
+            position: fixed;
+            left: 50%;
+            transform: translateX(50%);
+            bottom: 0;
+            max-width: 520px;
+            width: 100%;
+            z-index: 1000;
+        }
+    }
+}
