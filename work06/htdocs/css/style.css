@@ -321,16 +321,23 @@ body {
 
 @media screen and (min-width: 520px) {
   body {
-    padding-bottom: 80px;
+    padding-bottom: 10px;
   }
   .footer .main_menu {
     position: fixed;
     left: 50%;
-    transform: translateX(50%);
+    transform: translateX(-50%);
     bottom: 0;
     max-width: 520px;
-    width: 100%;
     z-index: 1000;
+    height: 58px;
+  }
+  .footer .main_menu .main_menu_icon {
+    height: 100%;
+  }
+  .footer .main_menu img {
+    max-width: 70%;
+    max-height: 58px;
   }
 }
 /*# sourceMappingURL=style.css.map */
