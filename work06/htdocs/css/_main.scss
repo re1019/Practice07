@@ -1,25 +1,51 @@
+.main {
+    @media screen and (min-width: 521px) {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
 .explanation {
     h3 {
-        margin: 0 auto;
-        font: normal normal 600 28px/42px "Yu Mincho";
+        position: relative;
+        display: block;
+        font-family: "Yu Mincho";
+        font-size: 30px;
+        font-weight: 600;
         color: #3b4043;
         margin-left: 20px;
         margin-right: 20px;
-        padding-bottom: 70px;
-        font-size: 28px; 
+        padding-top: 50px;
+        margin-bottom: 70px;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 60px;
+            height: 2px;
+            background: #cdd6dd;
+        }
     }
 
     p {
         color: #3b4043;
-        font: normal normal normal 14px/40px "Yu Mincho";
+        font-size: 14px;
+        line-height: 40px;
+        font-family:  "Yu Mincho";
         text-align: left;
         margin: 0 auto;
         margin-left: 20px;
-        margin-right: 20px;
+        margin-right: 25px;
         padding-bottom: 50px;
-        font-size: 14px;
+        .last-sentence {
+            display: block;
+            margin-top: 25px;
+        }
     }
 }
+
 
 .announce {
     img {
@@ -32,11 +58,12 @@
     }
 
     p {
-        font: normal normal normal 14px/40px "Yu Gothic";
-        font-weight: 400;
+        font-size: 14px;
+        line-height: 40px;
+        font-family:  "Yu Mincho";
         color: #707f89;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 23px;
+        margin-right: 22px;
         padding-bottom: 60px;
     }
 }
@@ -134,5 +161,5 @@
 .information_box_bottom {
     border-top: 1px solid #cdd6dd;
     border-bottom: 1px solid #cdd6dd;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
